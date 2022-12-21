@@ -16,3 +16,8 @@ std::ostream& operator<<(std::ostream& out, const Pos& pos)
 {
     return out << pos.x << "," << pos.y;
 }
+
+int mDist(const Pos& pos1, const Pos& pos2)
+{
+    return abs(pos1.x - pos2.x) + abs(pos1.y - pos2.y);
+}
